@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+ * {
+  box-sizing: border-box;
+}
+.clearfix{
+  overflow: auto;
+}
+#head {
+  
+  text-align: right;
+  padding-right: 10%;
+  font-family: Arial;
+  font-size: 150%;
+}
+
+body {
+    min-width: 530px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1%;
+  width: auto;
+  background-image: url("../fotky/bubny.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+/* Style the header */
+header {
+    background-size: cover;
+  height: 35%;
+  width: 100%;
+  background-image: url("../fotky/uvod.jpg");
+
+  background-repeat: no-repeat;
+
+  padding: 5%;
+  font-size: 35px;
+  color: white;
+}
+/*nadpisy*/
+h1, h3 {
+font-family: verdana;
+font-size: 150%;
+
+}
+.flex-container {
+display: flex;
+flex-wrap: nowrap;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  background: #ccc;
+  padding: 2%;
+  height: auto;
+}
+
+li{
+  margin: 30%;
+}
+#inside{
+  padding-top: 200%;
+  background-color: #ffdead;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+a{
+color: black;
+}
+#a{
+   float: top;
+   height: 1%;
+  text-align: center;
+  padding: 1%;
+  font-family: Arial;
+  font-size: 160%;  
+  background-color: #CDAF95;  
+}
+#nav {
+  font-family: Arial;
+font-size: 120%;
+background-color: #ffdead;
+}
+.left{
+float: left;
+padding-left: 3%;
+}
+article {
+  float: left;
+  padding: 2%;
+  width: 90%;
+  background-color: #f1f1f1;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+picture{
+  background-color: #f1f1f1;
+  
+  float: right;
+  padding-left: 2%; 
+
+}
+blockquote{
+  padding-top: 20%;
+}
+
+/* Clear floats after the columns */
+section:after {
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 1%;
+  text-align: center;
+  color: white;
+}
+.idk{
+  padding-top: 50px;
+  color: yellow;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 980px) {
+  article{
+   min-width: 600px;
+   width: 100%;
+   height: auto;
+ }
+ nav{
+   min-width: 380px;
+ }
+ header{
+   min-width: 980px;
+ }
+ 
+}
+@media (max-width: 1500px) {
+#a, footer, header{
+
+min-width: 980px;
+ }
+ article{
+   min-width: 800px;
+ }
+ nav{
+   min-width: 180px;
+ }
+}
+@media (max-width: 780px) {
+ #a{
+   text-align: center;
+ }
+}
+.pi{
+  height: 400px;
+}
+  </style>
+
+</head>
+<body>
+<header>
+  <h1>Muzikoterapie</h1>
+  <h3>Jana Světlíková</h3>
+  
+</header>
+
+
+
+<section id="a"> 
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+  <a href="../index.html"> <p><img  src="../fotky/home.png" alt="domu"></p></a>
+    </div>
+   
+      <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+        <a href="../nabidka/nabidka.html"><p>Nabídka</p></a>
+      </div>
+      <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+        <a href="../metoda/metoda.html"><p>Metoda</p></a>
+      </div>
+      <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+        <a href="../nastroje/nastroje.html"> <p>Nástroje</p></a>
+      </div>        
+    </div>
+  </div>
+</section>
+  
+
+<section class="flex-container">
+  <nav id="nav">
+    <ul>
+      <li><a href="../o_mne/o_mne.html"><img src="../fotky/ja.png" alt="ja">Jana</a></li>
+      <li><a href="../cenik/cenik.html"><img src="../fotky/money.png" alt="ceník">Ceník</a></li>
+      <li><a href="../misto_a_kontakt/kontakt.html"><img src="../fotky/email.png" alt="kontakt">Kontakt</a></li>
+      <li><a href="../formular/formular.html"><img src="../fotky/document.png" alt="kontakt">Formulář</a></li>
+      <li><a href="https://www.facebook.com/" target="_blank"><img src="../fotky/fac.png" alt="facebook">Facebook</a></li>
+    
+    </ul>
+  </nav>
+  
+  <article>
+      <picture><img class="pi" src="../fotky/nab.jpg" alt="jana"></picture>
+        
+     <h3> Individuální muzikoterapie</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, fugit? Temporibus vero hic pariatur ad quia qui doloremque nihil odio voluptatibus illum est a, atque, consectetur sapiente! Fuga obcaecati at mollitia vitae blanditiis maxime ad rerum aliquid alias, praesentium qui maiores. Numquam et, placeat quia eligendi officiis mollitia! Exercitationem, suscipit. Alias quod voluptas praesentium officia eaque beatae fugiat, dolorum distinctio cumque ex ab blanditiis dignissimos amet placeat neque adipisci facere excepturi dicta? Officiis veniam, laudantium unde maxime nobis magnam rem illum doloribus ex ipsa laboriosam ullam quam eveniet aut ab facere ipsam repellat temporibus, nam id autem. Itaque, reiciendis autem? Fuga recusandae officiis, explicabo reprehenderit voluptatem tempora velit culpa magni nisi maxime placeat consequatur tenetur non assumenda sunt minus corrupti et nam cumque voluptate provident atque molestiae. Reiciendis assumenda delectus maiores consequuntur, mollitia quisquam minus explicabo doloribus deleniti placeat cupiditate pariatur itaque porro fugiat voluptatum tempore nihil exercitationem dolore totam!</p>
+     <h3>  Muzikoterapeutická relaxace pro skupiny</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque temporibus fugiat harum rem! Ullam, rem mollitia corrupti illo deleniti cum quasi non consequatur! Amet doloribus necessitatibus autem blanditiis? Magnam dolor voluptatem id cumque maiores sequi eos quod alias. Laboriosam dolorem ullam perferendis, nostrum officia iusto fuga deserunt eos, sit itaque non fugiat, earum natus excepturi. Dolore, quidem earum. Incidunt est omnis, pariatur quae voluptatum necessitatibus molestiae. Ab sapiente nihil in esse eveniet nobis ut perspiciatis est porro voluptas error quod illo, quasi obcaecati modi suscipit praesentium ea pariatur commodi a voluptates minima nemo eum maiores. Voluptatem quos eum dolor, nemo quisquam odio tempore. Soluta, odio quod. Voluptates aperiam non corporis numquam eum eligendi doloremque quia libero natus ipsam porro explicabo exercitationem, eaque, ipsa unde facere tenetur optio id distinctio laborum odit provident quidem. Veniam asperiores in at nulla repudiandae quis quisquam nisi porro tempore nesciunt sit earum, temporibus fugit numquam.</p>
+        <h3>  Muzikoterapeutický koncert</h3>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure beatae, dicta eveniet non rem soluta minima illum iusto ut fuga ab labore maxime dolorum fugit quibusdam cumque commodi tenetur illo dolorem magni ipsam repellendus, eum sequi minus? Eveniet dolores tempora dicta ipsam odio alias reiciendis temporibus, cupiditate, illo nulla dignissimos, itaque consequuntur fuga asperiores officiis quae? Obcaecati adipisci quisquam autem dolores sequi tempore cumque beatae eaque provident rerum aut nulla cupiditate iure doloremque quo, aliquam minima. Ea, necessitatibus vero rerum quia distinctio ducimus officia sapiente natus labore delectus facere numquam placeat inventore minus soluta blanditiis illo temporibus quisquam, saepe aliquid magni impedit odio perferendis reiciendis. Quisquam nemo totam cum. Tenetur, nisi, perferendis consequatur unde corporis omnis officiis animi voluptatibus enim asperiores voluptatum magni molestiae incidunt quae atque perspiciatis. Nisi alias quisquam dolore reiciendis placeat, autem, aliquam, odio officia magni voluptatibus quaerat nostrum velit recusandae fuga nesciunt odit. Natus, adipisci ducimus.</p>
+    </article>
+</section>
+
+<footer>
+  <p>Vytvořil Hrom Orbital LŠ</p>
+</footer>
+</body>
+</html>

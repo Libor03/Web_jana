@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+ * {
+  box-sizing: border-box;
+}
+.clearfix{
+  overflow: auto;
+}
+#head {
+  
+  text-align: right;
+  padding-right: 10%;
+  font-family: Arial;
+  font-size: 150%;
+}
+.broken{
+  padding-right: 1%;
+}
+body {
+  min-width: 1480px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1%;
+  width: auto;
+  background-image: url("../fotky/bubny.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+/* Style the header */
+header {
+  min-width: 100%;
+  height: 35%;
+  width: 100%;
+  background-image: url("../fotky/uvod.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  font-size: 35px;
+  color: white;
+}
+/*nadpisy*/
+h2, h3 {
+font-family: verdana;
+font-size: 150%;
+
+}
+.flex-container {
+display: flex;
+flex-wrap: nowrap;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  background: #ccc;
+  padding: 2%;
+  height: auto;
+}
+
+li{
+  margin: 30%;
+}
+#inside{
+  padding-top: 200%;
+  background-color: #ffdead;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+a{
+color: black;
+}
+#a{
+   float: top;
+   height: 1%;
+  text-align: center;
+  padding: 1%;
+  font-family: Arial;
+  font-size: 160%;  
+  background-color: #CDAF95;  
+}
+#nav {
+  font-family: Arial;
+font-size: 120%;
+background-color: #ffdead;
+}
+.left{
+float: left;
+padding-left: 3%;
+}
+article {
+  float: left;
+  padding: 2%;
+  width: 90%;
+  background-color: #f1f1f1;
+  font-size: 120%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+picture{
+  background-color: #f1f1f1;
+  
+  float: left;
+  padding-right: 20%; 
+  padding-left: 6%;
+}
+blockquote{
+  padding-top: 20%;
+}
+
+/* Clear floats after the columns */
+section:after {
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 1%;
+  text-align: center;
+  color: white;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 980px) {
+  article{
+   min-width: 600px;
+   width: 100%;
+   height: auto;
+ }
+ nav{
+   min-width: 380px;
+ }
+ header{
+   min-width: 980px;
+ }
+ 
+}
+@media (max-width: 1500px) {
+#a, footer, header{
+
+min-width: 980px;
+ }
+ article{
+   max-width: 370px;
+ }
+ nav{
+   min-width: 180px;
+ }
+}
+@media (max-width: 780px) {
+ #a{
+   text-align: center;
+ }
+}
+  @media (max-width: 900px){
+    #i{
+      min-width: 400px;      
+    }
+
+  }
+
+#i{
+  background-position: top left;
+  background-repeat: no-repeat;
+padding-top: 2%;
+
+}
+  </style>
+  
+</head>
+<body>
+<header>
+  <h1>Muzikoterapie</h1>
+  <h3>Jana Světlíková</h3>
+  
+</header>
+
+
+
+<section id="a">
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+  <a href="..index.html"> <p><img  src="../fotky/home.png" alt="domu"></p></a>
+    </div>
+   
+      <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+        <a href="../nabidka/nabidka.html"><p>Nabídka</p></a>
+      </div>
+      <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+        <a href="../metoda/metoda.html"><p>Metoda</p></a>
+      </div>
+      <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+        <a href="../nastroje/nastroje.html"> <p>Nástroje</p></a>
+      </div>        
+    </div>
+  </div>
+
+</section>
+  
+
+<section class="flex-container">
+  <nav id="nav">
+    <ul>
+      <li><a href="../o_mne/o_mne.html"><img src="../fotky/ja.png" alt="ja"> Jana</a></li>
+      <li><a href="../cenik/cenik.html"><img src="../fotky/money.png" alt="ceník">Ceník</a></li>
+      <li><a href="#"><img src="../fotky/email.png" alt="kontakt">Kontakt</a></li>
+      <li><a href="../formular/formular.html"><img src="../fotky/document.png" alt="kontakt">Formulář</a></li>
+      <li><a href="https://www.facebook.com/" target="_blank"><img src="../fotky/fac.png" alt="facebook">Facebook</a></li>
+    </ul></nav>
+    
+
+    <picture id="i"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41125.22405201886!2d17.804338351192055!3d49.89267322157696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713d75919a45057%3A0x400af0f66160970!2zNzQ3IDg0IFVobMOtxZlvdg!5e0!3m2!1scs!2scz!4v1555767920061!5m2!1scs!2scz" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></picture>
+  
+  <article>
+  <h2>Adresa</h2>
+
+  <p>  <img class="broken" src="../fotky/home.png" alt="">Mgr. Jana Světlíková</p>
+  <p> Muzikoterapeutka, speciální pedagožka</p>
+  <p>Uhlířov, okr. Opava</p>
+  <br>
+  <h2>Telefon</h2>
+    <p><img src="../fotky/telephone.png" alt="telefon"> +420 603 512 860</p>
+    <br>
+    <h2>Email</h2>
+  <p> <img class="broken" src="../fotky/email.png" alt="email">svetli.jana@seznam.cz</p>
+   
+  </article>
+
+</section>
+
+<footer>
+  <p>Vytvořil Hrom Orbital LŠ</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+ * {
+  box-sizing: border-box;
+}
+main{
+  font-size: 120%;
+
+}
+.clearfix{
+  overflow: auto;
+}
+#head {
+  
+  text-align: right;
+  padding-right: 10%;
+  font-family: Arial;
+  font-size: 150%;
+}
+
+body {
+  min-width: 530px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1%;
+  width: auto;
+  background-image: url("../fotky/bubny.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+/* Style the header */
+header {
+  background-size: cover;
+  height: 35%;
+  width: 100%;
+  background-image: url("../fotky/uvod.jpg");
+  background-repeat: no-repeat;
+  padding: 5%;
+  font-size: 35px;
+  color: white;
+}
+/*nadpisy*/
+h1, h3 {
+font-family: verdana;
+font-size: 150%;
+}
+h2{
+text-align: center;  
+
+
+}
+.flex-container {
+display: flex;
+flex-wrap: nowrap;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  background: #ccc;
+  padding: 2%;
+  height: auto;
+}
+
+li{
+  margin: 30%;
+}
+#inside{
+  padding-top: 200%;
+  background-color: #ffdead;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+a{
+color: black;
+}
+#a{
+
+  height: auto;
+  width: auto;
+   float: top;
+   height: 1%;
+  text-align: center;
+  padding: 1%;
+  font-family: Arial;
+  font-size: 160%;  
+  background-color: #CDAF95;  
+}
+#nav {
+  float: left;
+  font-family: Arial;
+font-size: 120%;
+background-color: #ffdead;
+width: 10%;
+}
+.left{
+float: left;
+padding-left: 3%;
+}
+article {
+
+  padding: 2%;
+  width: 90%;
+  background-color: #f1f1f1;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.b{
+  background-color: #f1f1f1;
+  width: 50%;
+  padding-left: 2%; 
+  padding-top: 2%;
+float: left;
+margin-right: 80px;
+
+}
+blockquote{
+  padding-top: 20%;
+}
+
+/* Clear floats after the columns */
+section:after {
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 1%;
+  text-align: center;
+  color: white;
+}
+.idk{
+ 
+  color: black;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 200%;
+}
+.k{
+  padding-top: 2%;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 980px) {
+   article{
+    min-width: 600px;
+    width: 100%;
+    height: auto;
+  }
+  nav{
+    min-width: 380px;
+  }
+  header{
+    min-width: 980px;
+  }
+  
+}
+@media (max-width: 1500px) {
+#a, footer, header{
+
+min-width: 980px;
+  }
+  article{
+    min-width: 800px;
+  }
+  nav{
+    min-width: 180px;
+  }
+}
+@media (max-width: 780px) {
+  #a{
+    text-align: center;
+  }
+}
+  </style>
+
+</head>
+<body>
+<header>
+  <h1>Muzikoterapie</h1>
+  <h3>Jana Světlíková</h3>
+  
+</header>
+
+     
+<section id="a">
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+  <a href="../index.html"> <p><img  src="../fotky/home.png" alt="domu"></p></a>
+    </div>
+   
+      <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+        <a href="../nabidka/nabidka.html"><p>Nabídka</p></a>
+      </div>
+      <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+        <a href="../metoda/metoda.html"><p>Metoda</p></a>
+      </div>
+      <div class="col-sm-3 col-m-3 col-l-3 col-xl-3">
+        <a href="../nastroje/nastroje.html"> <p>Nástroje</p></a>
+      </div>        
+    </div>
+  </div>
+
+</section>
+  
+
+<section class="flex-container">
+  <nav id="nav">
+    <ul>
+      <li><a href="../o_mne/o_mne.html"><img src="../fotky/ja.png" alt="ja"> Jana</a></li>
+      <li><a href="../cenik/cenik.html"><img src="../fotky/money.png" alt="ceník">Ceník</a></li>
+      <li><a href="../misto_a_kontakt/kontakt.html"><img src="../fotky/email.png" alt="kontakt">Kontakt</a></li>
+      <li><a href="../formular/formular.html"><img src="../fotky/document.png" alt="kontakt">Formulář</a></li>
+      <li><a href="https://www.facebook.com/" target="_blank"><img src="../fotky/fac.png" alt="facebook">Facebook</a></li>
+    </ul>
+  </nav>
+<article>
+
+  <main class="container">
+
+   <h2>Poptávka + registrace</h2>
+   <br>
+    <form method="POST">
+        <!-- Jednořádkové textové pole - jméno -->
+        <div class="form-group row">
+            <label for="jmeno" class="col-sm-3 col-form-label">Jméno</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="jmeno" id="jmeno" placeholder="Křestní jméno" title="Jméno nesmí obsahovat jiné než abecední znaky">
+            </div>
+        </div>
+        <!-- Jednořádkové textové pole - příjmení -->
+        <div class="form-group row">
+            <label for="prijmeni" class="col-sm-3 col-form-label">Příjmení</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" name="prijmeni" id="prijmeni" placeholder="Příjmení">
+            </div>
+        </div>
+        <!-- Datové pole - datum narození -->
+        <div class="form-group row">
+            <label for="narozeni" class="col-sm-3 col-form-label">Datum narození</label>
+            <div class="col-sm-3">
+                <input type="date" class="form-control" name="narozeni" id="narozeni">
+            </div>
+        </div>
+        <!-- Přepínač (radio button) - studijní obor -->
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Nástroje, které preferujete</label>
+            <div class="col-sm-9">
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="obor" id="it" value="IT"> Bubny
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="obor" id="sv" value="SV"> Dechové nástroje
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="obor" id="uo" value="UO"> Mísy a zvonky
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- Výběrový seznam (select) - třídy -->
+        <div class="form-group row">
+            <label for="trida" class="col-sm-3 col-form-label">Mám zájem o:</label>
+            <div class="col-sm-3">
+                <select class="form-control" name="trida" id="trida">
+                    <option value="IT1" selected>Individuální muzikoterapie</option>
+                    <option value="SV1A">Muzikoterapeutická relaxace pro skupiny</option>
+                    <option value="SV1B">Muzikoterapeutický koncert</option>
+                </select>
+            </div>
+        </div>
+        <!-- Číselné pole - absence -->
+        <div class="form-group row">
+            <label for="absence" class="col-sm-3 col-form-label">Počet osob</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" name="absence" id="absence" value="0" min="1" max="10">
+            </div>
+        </div>
+        <!-- Číselné pole - průměrná známka -->
+        <div class="form-group row">
+            <label for="prumer" class="col-sm-3 col-form-label">Průměrný věk</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" name="prumer" id="prumer" value="1" min="1">
+            </div>
+        </div>
+        <!-- Zaškrtávací tlačítka (checkbox) - jazyky -->
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Terapii chci pro</label>
+            <div class="col-sm-9">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="jazyk[0]" id="en" value="angličtina" checked> Sebe
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="jazyk[1]" id="de" value="němčina"> Moje dítě
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="jazyk[2]" id="ru" value="ruština"> Skupinu lidí
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- Textové pole (textarea) - poznámka -->
+        <div class="form-group row">
+            <label for="poznamka" class="col-sm-3 col-form-label">Co nám chcete sdělit</label>
+            <div class="col-sm-9">
+                <textarea class="form-control" name="poznamka" id="poznamka" rows="5" placeholder="Napište, co chcete říci"></textarea>
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group row">
+            <label for="email" class="col-sm-3 col-form-label">Váš email </label>
+            <div class="col-sm-9">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"></div>
+                </div>
+                <input type="email" class="form-control" name="email" id="email" placeholder="your@email.cz">
+            </div>
+        </div>
+        <!-- Heslo (password) -->
+        <div class="form-group row">
+            <label for="heslo" class="col-sm-3 col-form-label">Heslo</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" name="heslo" id="heslo" maxlength="20" placeholder="Zadej bezpečné heslo">
+            </div>
+        </div>
+        <!-- Upload souboru (file) -->
+        <div class="form-group row">
+            <label for="foto" class="col-sm-3 col-form-label">Pokud máte vlastní prostor, vložte prosím fotografii</label>
+            <div class="col-sm-9">
+                <input type="file" class="form-control" name="foto" id="foto">
+            </div>
+        </div>
+       
+        <!-- Tlačítka (submit, reset) -->
+        <div class="form-group row">
+            <div class="col-sm-9 offset-sm-3">
+                <button type="submit" class="btn btn-primary">Potvrdit</button>
+                <button type="reset" class="btn btn-default">Obnovit</button>
+            </div>
+        </div>
+    </form>
+  </article>
+
+</section>
+
+<footer>
+  <p>Vytvořil Hrom Orbital LŠ</p>
+</footer>
+</main>
+</body>
+</html>
